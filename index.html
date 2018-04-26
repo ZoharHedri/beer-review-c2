@@ -1,10 +1,16 @@
+
 <!DOCTYPE html>
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+
   <title>Beer Review</title>
 </head>
+
 <body>
   <div class="container">
     <div class="row">
@@ -22,26 +28,37 @@
           <h3>Add a New Beer</h3>
 
           <div class="form-group">
-            <input type="text"
-              class="beer-input form-control"
-              placeholder="Beer Name">
+            <input type="text" class="beer-input form-control" placeholder="Beer Name">
           </div>
 
           <div class="form-group">
-            <input type="text"
-              class="category-input form-control"
-              placeholder="Category">
+            <input type="text" class="category-input form-control" placeholder="Category">
+          </div>
+
+          <!--PROJECT EXERCISE 4 (EXTENSION)
+          Add to your form a "select" element and some suitable "options" so that when user add a beers
+          they can also rate it from 0 to 5.
+          Append the new information to the page.-->
+          <div>
+              rate the Beer:  
+            <select>
+              <option class="op">0</option>
+              <option class="op">1</option>
+              <option class="op">2</option>
+              <option class="op">3</option>
+              <option class="op">4</option>
+              <option class="op">5</option> <!-- if i write value="op_5" he give me this and NOT 5-->
+            </select>
           </div>
 
           <button class="btn btn-primary post-beer" type="button">Post</button>
+
         </form>
       </div>
     </div>
-    </div>
-    <script
-    src="https://code.jquery.com/jquery-3.3.1.js"
-    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous"></script>
+  </div>
+  
   <script src="script.js"></script>
+
 </body>
 </html>

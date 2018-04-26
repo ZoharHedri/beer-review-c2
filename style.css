@@ -5,3 +5,9 @@ form {
 .user-post, .user-review {
   font-weight: bold;
 }
+
+li {
+  font-weight: bold;
+  font-size: 15px;
+  color: blue
+}
